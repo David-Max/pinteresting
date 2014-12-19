@@ -1,5 +1,5 @@
 source 'http://rubygems.org'
-ruby '2.0.0'
+ruby '2.1.5'
 gem 'tzinfo-data', platforms: [:mingw, :mswin]
 gem 'rails'
 gem 'sass-rails'
@@ -9,7 +9,8 @@ gem 'jquery-rails'
 gem 'turbolinks'
 gem 'jbuilder'
 gem 'bootstrap-sass'
-
+gem 'devise', "~> 3.4.1.rc2"
+ 
 
 group :development, :test do
 	gem 'sqlite3'
