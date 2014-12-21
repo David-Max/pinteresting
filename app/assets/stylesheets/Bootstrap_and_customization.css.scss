@@ -1,12 +1,12 @@
 
 $font-family-sans-serif:           		'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 
-$navbar-default-link-color: 			Black;
+$navbar-default-brand-color: 	#c0392b; 			
 $body-bg:						 		#2980b9;
 $body-bg:                 				#ecf0f1;
 $navbar-inverse-bg: 					white;
 $btn--primary-bg: 						#ecf0f1;
-$jumbotron-bg: 							#bdc3c7;
+$jumbotron-bg: 							#3498db;
 $modal-content-fallback-border-color: 	red;
 @import 'bootstrap';
 @import url(http://fonts.googleapis.com/css?family=Playfair+Display:900,700italic);
