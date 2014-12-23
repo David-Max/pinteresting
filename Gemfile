@@ -11,6 +11,7 @@ gem 'jbuilder'
 gem 'bootstrap-sass'
 gem 'devise', "~> 3.4.1.rc2"
 gem 'paperclip', github: 'thoughtbot/paperclip'
+gem 'aws-sdk', "~> 1.60.2"
  
 
 group :development, :test do
