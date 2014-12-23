@@ -17,22 +17,14 @@ class PinsController < ApplicationController
   end
 
   def create
-
-@pin = current_user.pins.new(params[:pin])
-
-respond_to do |format|
-  if @pin.save
-    format.html { redirect_to @pin, notice: 'Pin was successfully created.' }
-    format.json { render json: @pin, status: :created, location: @pin }
+    @pin = current_user.pins.build(pin_params)
+    if @pin.save
+    redirect_to @pin, notice: 'Pin was successfully created.'
   else
-    format.html { render action: "new" }
-    format.json { render json: @pin.errors, status: :unprocessable_entity }
+    render action: 'new'
   end
 end
-end   
-
-
-  def update
+    def update
     if @pin.update(pin_params)
       redirect_to @pin, notice: 'Pin was successfully updated.'
     else

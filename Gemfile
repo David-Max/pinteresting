@@ -10,6 +10,7 @@ gem 'turbolinks'
 gem 'jbuilder'
 gem 'bootstrap-sass'
 gem 'devise', "~> 3.4.1.rc2"
+gem 'paperclip', github: 'thoughtbot/paperclip'
  
 
 group :development, :test do
